@@ -24,7 +24,7 @@ public class UI extends JFrame {
 		auto.start();
 		
 		but = new JButton("Start/stop autoclicker");
-		but.setSize(100, 100);
+		but.setSize(200, 200);
 		but.setLocation(10, 20);
 		but2 = new JButton("Stop program");
 		but2.setSize(100, 100);
