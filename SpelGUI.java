@@ -15,7 +15,7 @@ public class SpelGUI extends JFrame {
 		this.spel = spel;
 		this.lijst = lijst;
 		
-		OverzichtGUI overzicht = new OverzichtGUI();
+		OverzichtGUI overzicht = new OverzichtGUI(this);
 		SpelinvoerGUI invoer = new SpelinvoerGUI();
 		GalgGUI galg = new GalgGUI();
 		
@@ -24,9 +24,11 @@ public class SpelGUI extends JFrame {
 		create();
 	}
 	
+	
 	private void create() {
+		this.setTitle("Galgje");		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setPreferredSize(new Dimension(350,350));
+		this.setPreferredSize(new Dimension(900,900));
 		this.pack();
 		this.setLocationRelativeTo(null);
 		this.setResizable(false);
